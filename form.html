@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validar formulario</title>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h2>Pago de servicio en l&iacute;nea</h2>
+    <div class="form">
+      <form action="#" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="servicio_a_pagar">Servicio a pagar</label>
+            <select name="servicio_a_pagar" id="servicio_a_pagar">
+              <option value="Internet">Internet</option>
+              <option value="CableTV">Cable TV</option>
+              <option value="Agua">Agua</option>
+              <option value="Agua">Luz</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="codigo_cliente">C&oacute;digo del cliente</label>
+            <input id="codigo_cliente" type="text" value="" name="codigo_cliente" placeholder="000-000" required/>
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electr&oacute;nico</label>
+            <input id="email" type="text" value="" name="email" placeholder="algo@dominio.com" required />
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <label for="numFactura">N&uacute;mero de factura</label>
+            <input id="numFactura" type="text" value="" name="numFactura" placeholder="#-###" required />
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <label for="moneda">Moneda y monto a pagar</label>
+            <select name="moneda" id="moneda">
+              <option value="COR">C$</option>
+              <option value="USD">US $</option>
+            </select>
+            <input id="monto_pago" class="dinero" type="text" value="" placeholder="##,###.##" name="MontoPagar" size="6" required/>
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <label for="tipo_tarjeta">Tipo tarjeta de cr&eacute;dito</label>
+            <select name="tipo_tarjeta" id="tipo_tarjeta">
+              <option value="VISA">VISA</option>
+              <option value="MASTERCARD">MasterCard</option>
+              <option value="AMERICANEXPRESS">American Express</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numero_tarjeta">N&uacute;mero de tarjeta de cr&eacute;dito</label>
+            <input id="numero_tarjeta" type="text" value="" placeholder="0000-0000-0000-0000" name="numero_tarjeta" size="16" required/>
+            <span class="requerido">*</span>
+          </div>
+          <div class="clear"></div>
+          <div class="form-group">
+            <label for="tarjetahabiente">Nombre del tarjetahabiente</label>
+            <input id="tarjetahabiente" type="text" value="" name="tarjetahabiente" required/>
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <label for="fechaexp">Fecha de expiraci&oacute;n</label>
+            <input id="fechaexp" type="text" value="" placeholder="mm-aa" size="5" required />
+            <span class="requerido">*</span>
+          </div>
+          <div class="form-group">
+            <input id="btn_pagar" type="submit" value="Pagar" name="btn_pagar" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
